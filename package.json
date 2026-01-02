@@ -1,0 +1,24 @@
+{
+  "name": "react_class",
+  "version": "1.0.0",
+  "description": "Test Command",
+  "homepage": "https://github.com/ROHIT-18-09/React_Class#readme",
+  "bugs": {
+    "url": "https://github.com/ROHIT-18-09/React_Class/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ROHIT-18-09/React_Class.git"
+  },
+  "license": "ISC",
+  "author": "Rohit",
+  "type": "commonjs",
+  "main": "first.js",
+  "scripts": {
+    "start": "Node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
