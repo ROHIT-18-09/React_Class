@@ -29,8 +29,8 @@ const myfun = (a,b) => a + b;{
         res.send("RK University");
     })
     // 3. Create a endpoint which will accept name and last name and print full name.
-    app.get('/fullname', (req, res) => {
-        const firstName = "Rohit";
-        const lastName = "Dabhi";
+    app.get('/fullname/:firstName/:lastName', (req, res) => {
+        const firstName = req.params.firstName;
+        const lastName = req.params.lastName;
         res.send(`Full Name: ${firstName} ${lastName}`);
     })
