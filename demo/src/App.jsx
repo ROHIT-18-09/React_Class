@@ -4,6 +4,8 @@ import ClassProps from "./RK/test"
 import StateCounter from "./RK/counter"
 import StringChange from "./RK/string_change"
 import ConditionalRandering from "./RK/conditional_randering"
+import TodoList from "./todolist"
+import ContactBook from "./contactbook"
 
 function App() {
   
@@ -29,8 +31,13 @@ function App() {
       btnText = "Add To Cart"
        /> */}
 
-       <div> <ConditionalRandering /> </div>
-      <h1></h1>
+       {/* <div> <ConditionalRandering /> </div>
+      <h1></h1> */}
+
+      {/* <div> <TodoList /> </div> */}
+
+      <div> <ContactBook /> </div>
+
     </>
   )
 }
