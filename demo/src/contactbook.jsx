@@ -42,6 +42,12 @@ class ContactBook extends Component {
         }))
     };
 
+    toggleDisplay = (id) => {
+        this.setState((prevState) => ({
+            contacts: prevState.contacts.map((c) => c.id === id ? {...c, visible: !c.visible} : c),
+        }))
+    }
+
 
     render() {
         const { contacts, fname, lname, phone } = this.state;
@@ -56,7 +62,7 @@ class ContactBook extends Component {
             {
                 contacts.map((c) => (
                     <li key= {c.id} >
-                        {c.fname} <button>View</button> <button onClick={this.deletecontact }>Delete</button>
+                        {c.fname} <button onClick={() => this.toggleDisplay(c.id)}>View</button> <button onClick={this.deletecontact(c.id)}>Delete</button>
                         <div style={{display: c.visible ? "" : "None"}}>
                             {" "}
                             {c.lname} {""} {c.phone}
